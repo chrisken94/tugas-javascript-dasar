@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Javascript</title>
+</head>
+<body>
+
+    <!-- NOMOR 1 -->
+    1.
+    <script>
+        var p = 5;
+        var l = 10;
+        var t = 5;
+        var volume = p * l * t;
+        document.write("Luas Balok adalah " , volume , " sentimeter");
+    </script>
+    <br>
+
+    <!-- NOMOR 2 -->
+    2.
+    <script>
+        var umur = 49;
+        if (umur<10) {
+            document.write("Usia anda " , umur , " tahun, harga tiketnya Rp. 10.000");
+        }
+        else if (umur==10 && umur<30) {
+            document.write("Usia anda " , umur , " tahun, harga tiketnya Rp.15.000");
+        }
+        else if (umur>=30) {
+            document.write("Usia anda " , umur , " tahun, harga tiketnya Rp.30.000");
+        }
+        else {
+            document.write("Mohon masukkan usia anda, Terima Kasih");
+        }
+    </script> <br>
+
+    <!-- NOMOR 3 -->
+    3.
+    <script>
+
+        var a = 15;
+        var b = 5;
+        var add = a + b;
+        var sub = a - b;
+        var mul = a * b;
+        var div = a / b;
+        var mod = a % b;
+        document.write("Hasil pertambahan dari " , a , " & " , b , " adalah " , add);   
+        document.write("<br>", "&nbsp;&nbsp;&nbsp;&nbsp;");
+        document.write("Hasil pengurangan dari " , a , " & " , b , " adalah " , sub);   
+        document.write("<br>", "&nbsp;&nbsp;&nbsp;&nbsp;");
+        document.write("Hasil perkalian dari " , a , " & " , b , " adalah " , mul);   
+        document.write("<br>", "&nbsp;&nbsp;&nbsp;&nbsp;");
+        document.write("Hasil pembagian dari " , a , " & " , b , " adalah " , div);   
+        document.write("<br>", "&nbsp;&nbsp;&nbsp;&nbsp;");
+        document.write("Hasil modulus dari " , a , " & " , b , " adalah " , mod);   
+
+    </script> <br>
+
+    <!-- NOMOR 4 -->
+    4.
+    <script>
+
+        var genap = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+        var ganjil = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19];
+        document.write("Bilangan genap : ", genap);
+        document.write("<br>");
+        document.write("&nbsp;&nbsp;&nbsp;&nbsp;Bilangan ganjil : ", ganjil);   
+
+    </script> <br>
+
+    <!-- NOMOR 5 -->
+    5.
+    <script>
+
+        var determinan = [
+                    ["3","7"],
+                    ["2", "5"]
+                ];
+        document.write(determinan + "<br>");
+        document.write("Determinan[0][0] = " , determinan[0][0] , "<br>" );
+        document.write("Determinan[0][1] = " , determinan[0][1] , "<br>" );
+        document.write("Determinan[1][0] = " , determinan[1][0] , "<br>" );
+        document.write("Determinan[1][1] = " , determinan[1][1] , "<br>" );
+
+        var det1 = determinan[0][0] * determinan[1][1];
+        var det2 = determinan[0][1] * determinan[1][0];
+
+        var total = det1 - det2;
+
+        document.write("<br>");
+
+        document.write("Determinan ",determinan[0][0], " dikali ", "Determinan ",determinan[1][1], " = ", det1);
+
+        document.write("<br>");
+
+        document.write("Determinan ",determinan[0][1], " dikali ", "Determinan ",determinan[1][0], " = ", det2);
+
+        document.write("<br>");
+        document.write("Determinan akhir = ", det1, " - ", det2, " = ", total);
+
+    </script>
+    
+</body>
+</html>
